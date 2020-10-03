@@ -1,8 +1,8 @@
 package com.example.kotlinenter;
 
-public class StateGui {
-    private boolean button = true;
-    private String text = "";
+public class StateGui implements IStateGui {
+    private boolean button;
+    private String text;
 
     public boolean isButton() {
         return button;
@@ -18,5 +18,10 @@ public class StateGui {
 
     public void setText(String text) {
         this.text = text;
+    }
+
+    @Override
+    public StateGui getState() {
+        return this;
     }
 }

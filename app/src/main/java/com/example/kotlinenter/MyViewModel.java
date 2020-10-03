@@ -14,4 +14,11 @@ public class MyViewModel extends ViewModel {
     public LiveData<StateGui> getStateGui() {
         return stateGui;
     }
+
+    public void buttonClick(String text) {
+        StateGui stateGui = new StateGui();
+        stateGui.setText(text);
+        stateGui.setButton(false);
+        setStateGui(stateGui.getState());
+    }
 }
