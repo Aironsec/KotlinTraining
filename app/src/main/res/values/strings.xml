@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">KotlinEnter</string>
+    <string name="button">нажать</string>
+    <string name="text">Kotlin, начало!</string>
+</resources>
